@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
  
+  get 'reviewers/index'
+
 root 'static_pages#home'
   #sets static home page so '/' will go to 'static_pages#home'
 

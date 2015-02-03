@@ -1,6 +1,6 @@
 'require rails_helper'
 
-	describle StaticPagesController, type: :controller do 
+	describe StaticPagesController, type: :controller do 
 		describe '#home' do
 			it 'renders home' do
 				get :home
@@ -14,4 +14,4 @@
 			expect(response).to render_template(:about)
 		end	
 	end
-end		
+end	

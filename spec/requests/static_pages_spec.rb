@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe 'static pages' do 
-		subject { page }
+describe 'static pages' do # Tabbing
+	subject { page }
 
 describe 'home page' do
 	before { visit root_path }		
@@ -15,3 +15,6 @@ describe 'about page' do
 	before { visit about_path }
 
 	it {should have_selector('h4', text:"This is my first project")}
+	end
+		
+end	
